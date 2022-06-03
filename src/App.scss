@@ -1,0 +1,11 @@
+ @use './index.scss' as global;
+
+ body {
+     margin-top: 40px;
+     border-radius: 20px;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: global.$white;
+     box-shadow: global.$box-shadow;
+ }

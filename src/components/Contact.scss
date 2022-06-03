@@ -1,0 +1,367 @@
+@use "../index.scss" as global;
+
+.contact {
+  margin-top: 10x;
+  padding-bottom: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  &-heading {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+  }
+
+  &-container {
+    margin-left: 40px;
+
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+
+    &-left {
+      margin-top: 100px;
+      &-icons {
+        svg {
+          cursor: pointer;
+          padding-right: 20px;
+          margin-bottom: 30px;
+        }
+      }
+
+      &-timing {
+        p {
+          font-weight: 800;
+        }
+      }
+      &-icon {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+
+        svg {
+          margin-right: 20px;
+        }
+        p:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-right {
+      background-color: global.$primary;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 400px;
+      width: 400px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 10px;
+
+      &-form {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 400px;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+
+        button {
+          width: 200px;
+          height: 40px;
+          border-radius: 4px;
+          color: global.$secondary;
+          font-weight: 600;
+          background-color: transparent;
+          cursor: pointer;
+
+          &:hover {
+            color: white;
+            background: global.$secondary;
+            border: none;
+          }
+        }
+      }
+    }
+    .name {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+      input {
+        width: 250px;
+        border-radius: 4px;
+        box-shadow: global.$box-shadow;
+        border: none;
+        height: 40px;
+      }
+
+      label {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+      textarea {
+        width: 250px;
+        border-radius: 4px;
+
+        box-shadow: global.$box-shadow;
+        border: none;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .contact {
+    margin-top: 30x;
+    // padding-bottom: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+    &-heading {
+      font-size: 1.2rem;
+      padding-bottom: 0;
+    }
+
+    &-container {
+      margin-left: 40px;
+      text-align: center;
+      margin-right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: space-around;
+
+      &-left {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        &-icons {
+          svg {
+            cursor: pointer;
+            padding-right: 20px;
+            margin-bottom: 30px;
+          }
+        }
+
+        &-timing {
+          p {
+            font-weight: 800;
+            font-size: 0.9rem;
+          }
+        }
+        &-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 30px;
+          font-size: 0.9rem;
+
+          svg {
+            margin-right: 20px;
+          }
+          p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &-right {
+        background-color: global.$primary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 400px;
+        width: 400px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+
+        &-form {
+          display: flex;
+          flex-direction: column;
+          height: 400px;
+          width: 400px;
+          align-items: center;
+          justify-content: space-around;
+          border-radius: 10px;
+
+          button {
+            width: 200px;
+            height: 40px;
+            border-radius: 4px;
+            color: global.$secondary;
+            font-weight: 600;
+            background-color: transparent;
+            cursor: pointer;
+
+            &:hover {
+              color: white;
+              background: global.$secondary;
+              border: none;
+            }
+          }
+        }
+      }
+      .name {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        input {
+          width: 250px;
+          border-radius: 4px;
+          box-shadow: global.$box-shadow;
+          border: none;
+          height: 40px;
+        }
+
+        label {
+          font-size: 0.8rem;
+          margin-bottom: 10px;
+        }
+        textarea {
+          width: 250px;
+          border-radius: 4px;
+
+          box-shadow: global.$box-shadow;
+          border: none;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .contact {
+    margin-top: 30x;
+    // padding-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &-heading {
+      text-align: center;
+      font-size: 1.2rem;
+      padding-bottom: 0;
+    }
+
+    &-container {
+      margin-left: 40px;
+      text-align: center;
+      margin-right: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: space-around;
+
+      &-left {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        &-icons {
+          svg {
+            cursor: pointer;
+            padding-right: 20px;
+            margin-bottom: 30px;
+          }
+        }
+
+        &-timing {
+          p {
+            font-weight: 800;
+            font-size: 0.9rem;
+          }
+        }
+        &-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 30px;
+          
+          font-size: 0.9rem;
+
+          svg {
+            margin-right: 20px;
+          }
+          p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &-right {
+        background-color: global.$primary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 350px;
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+
+        &-form {
+          display: flex;
+          flex-direction: column;
+          height: 300px;
+          width: 300px;
+          align-items: center;
+          justify-content: space-around;
+          border-radius: 10px;
+
+          button {
+            width: 100px;
+            margin-top: 5px;
+            height: 45px;
+            border-radius: 4px;
+            color: global.$secondary;
+            font-weight: 600;
+            font-size: 0.8rem;
+            background-color: transparent;
+            cursor: pointer;
+
+            &:hover {
+              color: white;
+              background: global.$secondary;
+              border: none;
+            }
+          }
+        }
+      }
+      .name {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        input {
+          width: 200px;
+          border-radius: 4px;
+          box-shadow: global.$box-shadow;
+          border: none;
+          height: 30px;
+        }
+
+        label {
+          font-size: 0.8rem;
+          margin-bottom: 10px;
+        }
+        textarea {
+          width: 200px;
+          border-radius: 4px;
+
+          box-shadow: global.$box-shadow;
+          border: none;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
